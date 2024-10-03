@@ -1,0 +1,292 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+/* hero section */
+.video-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.home-text-wrapper {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: white;
+  padding-top: 100px;
+}
+
+.btn-wrapper {
+  margin-top: 20px;
+}
+
+.slider-bottom {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+
+
+/* cards section 2 */
+
+.border_radius{
+  border-radius: 5px;
+}
+
+.card-container {
+  padding: 70px; /* Add padding around the card container */
+}
+
+.card {
+  border: 2px solid #ddd;  
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);  
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 20px; 
+  padding: 25px;
+}
+
+.card-body {
+  padding: 20px; /* Add padding inside the card */
+}
+
+.card:hover {
+  transform: translateY(-5px);  
+}
+
+
+/* images */
+.card-bg {
+  background-size: cover;
+  background-position: center;
+  color: white; /* Adjust text color based on the image */
+  background-repeat: no-repeat;
+  height: 300px; /* You can adjust the height as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* all */
+.text_blue{
+  color: #3F497F;
+}
+
+/* Custom styles for Plyr video player buttons */
+.plyr--video .plyr__controls button {
+  background-color: none !important; /* Default button color */
+  color: white !important;
+  transition: background-color 0.3s ease;
+}
+
+/* Change the button color on hover */
+.plyr--video .plyr__controls button:hover {
+  background-color: #F7C04A !important; /* Custom hover color */
+  color: #3F497F !important;
+}
+
+/* Optional: Customize progress bar */
+.plyr--video .plyr__progress--played, .plyr--video .plyr__volume--display {
+  background-color: #F7C04A !important; /* Custom progress bar color */
+}
+
+/* Custom color for the large play button */
+.plyr--full-ui .plyr__control--overlaid {
+  background-color: #F7C04A !important; /* Background color */
+  color: #3F497F !important;            /* Text color */
+}
+
+/* -------------------- */
+
+/* about us carausel */
+
+/* .container {
+  padding: 20px;
+} */
+
+.right-column {
+  width: 100%; 
+  max-height: 600px; 
+  overflow-y: auto; 
+}
+
+.accordian ul {
+  display: flex;
+  flex-wrap: wrap; 
+  list-style-type: none;
+  padding: 0; 
+}
+
+.accordian li {
+  width: calc(50% - 20px); 
+  margin-right: 20px; 
+  margin-bottom: 20px; 
+}
+
+.accordian li:nth-child(2n) {
+  margin-right: 0; 
+}
+
+.accordian img {
+  max-width: 100%; /* Responsive images */
+  height: auto;
+  display: block;
+}
+
+
+.gradietns{
+ background: hsla(221, 45%, 73%, 1);
+
+background: linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9BAFD9", endColorstr="#103783", GradientType=1 );
+
+}
+
+/* icons */
+.social {
+  display: flex; /* Aligns items in a row */
+  gap: 10px; /* Space between icons */
+}
+
+.social a {
+  color: #fff; /* Set icon color */
+  font-size: 14px; /* Adjust size as needed */
+  transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.social a:hover {
+  color: #F7C04A; /* Change color on hover */
+}
+
+/* header css nav*/
+.header {
+  position: absolute; /* Keep it absolute initially */
+  z-index: 111;
+  left: 0;
+  top: 0;
+  right: 0;
+  padding: 0;
+  background-color: transparent; /* Change as per your design */
+  transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+.header.fixed {
+  position: fixed; /* Make it fixed */
+  top: 0; /* Align to the top */
+  background-color: #000; /* Change background when fixed */
+  padding: 10px 0; /* Adjust padding as needed */
+  z-index: 100; /* Ensure it's above other content */
+}
+
+.header.fixed .topbar {
+  visibility: hidden; /* Hide topbar when fixed */
+  opacity: 0; /* Fade out */
+  display: none; /* Remove from layout */
+}
+
+.navbar-default {
+  background-color: transparent; /* Initial transparent background */
+}
+
+.header.fixed .navbar-default {
+  background-color: #000; /* Background color when fixed */
+}
+
+.navbar-default .nav>li>a {
+  color: #fff !important; /* Text color when navbar is fixed */
+}
+
+/* Mobile responsiveness navbar */
+@media (max-width: 768px) {
+  .header {
+      background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+  }
+  
+  .navbar-toggle {
+      border-color: #fff; /* Change toggle button color */
+  }
+  @media (max-width: 768px) {
+  .mobile-img {
+    width: 100% !important; /* Make the image full width on mobile */
+  }
+}
+
+  .navbar-default .nav > li > a {
+      color: #fff; /* Change text color for links */
+      font-size: 14px; /* Adjust font size */
+  }
+
+  .social a {
+      margin-left: 10px; /* Adjust margin for social icons */
+  }
+  
+  .topbar p {
+      font-size: 12px; /* Smaller font size for topbar text */
+  }
+
+  .header.fixed .topbar {
+      display: none; /* Hide topbar when fixed */
+  }
+
+  .navbar-default {
+      border: none; /* Remove border for mobile */
+  }
+
+  .navbar-default .nav > li {
+      float: none; /* Stack items vertically */
+  }
+}
+
+@media (max-width: 768px) {
+  .mobile-img {
+    width: 60% !important; 
+    margin-left: 70px;
+    margin-top: 30px;
+  }
+}
+
+.slick-dots {
+  margin-bottom: 30px; /* This adds space below the dots */
+}
+.slick-dots {
+  margin-bottom: 20px; /* Adjust the value to control the distance */
+}
+
+
+
+
+
+
+
+
+

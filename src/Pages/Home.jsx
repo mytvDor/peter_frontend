@@ -53,21 +53,21 @@ const Home = () => {
           <h1 style={{ textAlign: "center", marginBottom: "85px", color: "#3F497F" }}>Unrivalled Track Record of Success Since 1994</h1>
           <div className="row">
             {/* First Column */}
-            <div className="col-lg-3 col-md-3">
+            <div className="col-lg-4 col-md-4">
               <div className="stat-count">
                 <h4 className="stat-timer" style={{ textAlign: "center", color: "#F7C04A" }}>50 K+</h4>
-                <h3 style={{ color: "#000",textAlign: "center", }} > Peter Lim's Physical Books Sold World wide</h3>
+                <h3 style={{ color: "#000",textAlign: "center", }} >  Books Sold World wide</h3>
               </div>
             </div>
             {/* Second Column */}
-            <div className="col-lg-3 col-md-3">
+            <div className="col-lg-4 col-md-4">
               <div className="stat-count">
                 <h4 className="stat-timer" style={{ textAlign: "center", color: "#F7C04A" }}>20 K+</h4>
                 <h3 style={{ color: "#000", textAlign: "center", }} >Happy Students</h3>
               </div>
             </div>
             {/* Third Column */}
-            {/* <div className="col-lg-3 col-md-3">
+            {/* <div className="col-lg-4 col-md-4">
               <div className="stat-count">
                 <h4 className="stat-timer" style={{ textAlign: "center", color: "#F7C04A" }}>6 yrs</h4>
                 <h3 style={{ color: "#000", textAlign: "center", }} > students who stayed (from Secondary 1 to JC2),
@@ -75,7 +75,7 @@ const Home = () => {
               </div>
             </div> */}
             {/* Fourth Column */}
-            <div className="col-lg-3 col-md-3">
+            <div className="col-lg-4 col-md-4">
               <div className="stat-count">
                 <h4 className="stat-timer" style={{ textAlign: "center", color: "#F7C04A" }}>174 +</h4>
                 <h3 style={{ color: "#000", textAlign: "center", }}> Schools</h3>
@@ -84,6 +84,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+
 
       <div className="card-container">
   <div className="section-title text-center">
